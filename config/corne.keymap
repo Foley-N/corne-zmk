@@ -13,12 +13,12 @@
 
         dvorak {
             bindings = <&to 3>;
-            key-positions = <15 12 37>;
+            key-positions = <15 37 24>;
         };
 
         qwerty {
             bindings = <&to 0>;
-            key-positions = <12 1 37>;
+            key-positions = <1 37 24>;
         };
     };
 

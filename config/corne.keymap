@@ -8,6 +8,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        dvorak {
+            bindings = <&to 3>;
+            key-positions = <15 12 37>;
+        };
+
+        qwerty {
+            bindings = <&to 0>;
+            key-positions = <12 1 37>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,12 +80,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        dvorak {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
